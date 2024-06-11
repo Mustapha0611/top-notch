@@ -1,9 +1,9 @@
 <template>
   <main
-    class="md:h-[90dvh] h-auto w-full bg-blue-50 flex flex-col md:flex-row md:px-20 px-5"
+    class="md:h-[90dvh] pt-10 md:pt-0 h-auto w-full bg-blue-50 flex flex-col md:flex-row md:px-20 px-5"
   >
     <section class="flex-1 flex items-start justify-center flex-col">
-      <h1 class="font-semibold lg:text-7xl md:text-5xl text-3xl">
+      <h1 class="font-semibold lg:text-7xl md:text-5xl text-4xl">
         Top Notch Finance
       </h1>
       <p class="mt-10 md:pr-5 lg:pr-10">

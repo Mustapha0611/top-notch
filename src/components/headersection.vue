@@ -20,9 +20,9 @@
         </ul>
       </nav>
     
-      <div class="absolute md:static border-2 border-blue-300 rounded-md md:h-auto md:w-auto w-full left-0 top-[33rem] md:top-0 flex items-end justify-center opacity-0 md:opacity-100 transition-opacity"
+      <div class="absolute md:static rounded-md md:h-auto md:w-auto w-full left-0 top-[33rem] md:top-0 flex items-end justify-center opacity-0 md:opacity-100 transition-opacity"
             :class="{showContact : showMenu}">
-        <button aria-label="Contact" class="text-black font-semibold md:px-7  linear py-2 px-5 rounded-md">Contact</button>
+        <button aria-label="Contact" class="text-black font-semibold md:px-7  border-2 border-blue-300 linear py-2 px-5 rounded-md">Contact</button>
       </div>
     
       <button aria-label="Toggle Menu" aria-haspopup="true" class="md:hidden flex cursor-pointer" @click="menuToggle" @keyup.enter="menuToggle">

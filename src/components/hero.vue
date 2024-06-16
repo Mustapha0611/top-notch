@@ -21,9 +21,9 @@
         >Learn More</a
       >
     </section>
-    <section class="flex-1">
-      <div>
-        <img src="../assets/hero.png" alt="hero-image" />
+    <section class="flex-1 flex items-center">
+      <div class="w-auto lg:h-[70%] ">
+        <img src="../assets/hero.png" alt="hero-image" class="w-full h-full" />
       </div>
     </section>
   </main>

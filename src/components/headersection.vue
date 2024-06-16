@@ -2,7 +2,7 @@
     <header role="banner" class="flex justify-between items-center h-[10vh] bg-blue-50 px-4 md:px-10">
       <div >
         <router-link to="/" >
-          logo
+          <img src="../assets/logo.png" alt="logo"  class="w-20 h-20">
         </router-link>
       </div>
     
@@ -16,13 +16,13 @@
           </span>
           <li role="menu item"><a href="#"  @click="menuToggle">Home</a></li>
           <li role="menu item"><a href="#about"  @click="menuToggle">About</a></li>
-          <li role="menu item"><a href=""  @click="menuToggle">Portfolio</a></li>
+          <li role="menu item"><a href=""  @click="menuToggle">Services</a></li>
         </ul>
       </nav>
     
       <div class="absolute md:static rounded-md md:h-auto md:w-auto w-full left-0 top-[33rem] md:top-0 flex items-end justify-center opacity-0 md:opacity-100 transition-opacity"
             :class="{showContact : showMenu}">
-        <button aria-label="Contact" class="text-black font-semibold md:px-7  border-2 border-blue-300 linear py-2 px-5 rounded-md">Contact</button>
+        <button aria-label="Contact"   class="px-5 py-2 rounded-lg  bg-blue-700 text-slate-100">Contact</button>
       </div>
     
       <button aria-label="Toggle Menu" aria-haspopup="true" class="md:hidden flex cursor-pointer" @click="menuToggle" @keyup.enter="menuToggle">

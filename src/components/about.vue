@@ -1,8 +1,8 @@
 <template>
-  <main class="p-10 text-blue-950" id="about">
-    <h2 class="text-5xl text-center font-semibold ">About Us</h2>
+  <main class="px-10 py-10 text-blue-950" id="about">
+    <h2 class="md:text-5xl text-3xl text-center font-semibold ">About Us</h2>
     <div class="flex gap-10 justify-center mt-10 flex-wrap">
-        <section v-for="about in aboutContent" class="max-w-[23rem]  rounded-xl  hover:shadow-lg p-5 flex flex-col hover:scale-105 transition-all">
+        <section v-for="about in aboutContent" class="max-w-[23rem]  rounded-xl  shadow-md p-5 flex flex-col hover:scale-105 transition-all">
             <span class="mx-auto"><img :src="about.img" class="w-20 h-20" :alt="about.title"></span>
             <h3 class="text-2xl my-5 font-medium">{{ about.title }}</h3>
             <p v-for="text in about.content">

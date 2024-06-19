@@ -6,17 +6,17 @@
     <div
       v-for="item in items"
       :key="item.id"
-      class="relative mx-auto w-72 h-72 bg-blue-300 shadow-md rounded-lg overflow-hidden"
+      class="relative mx-auto w-72 h-80 bg-blue-300 shadow-md rounded-lg overflow-hidden"
       @mouseover="hoverItem = item.id"
       @mouseleave="hoverItem = null"
     >
-      <img :src="item.img" :alt="item.name" />
+      <img :src="item.img" :alt="item.name" class="h-full w-full object-fill" />
       <div
         :class="{
           'opacity-0': hoverItem !== item.id,
           'opacity-100': hoverItem === item.id,
         }"
-        class="absolute cursor-pointer inset-0 bg-blue-950 bg-opacity-70 backdrop-blur-sm flex gap-4 items-center px-2 justify-center text-white text-xl flex-col transition-opacity duration-400"
+        class="absolute cursor-pointer inset-0 bg-blue-950 bg-opacity-70 backdrop-blur-sm flex gap-4 items-center px-2 justify-center text-white text-xl flex-col transition-opacity duration-900"
       >
         <p class="text-[20px] text-center">
           {{ item.name }} <br />

@@ -1,5 +1,5 @@
 <template>
-    <header role="banner" class="flex justify-between items-center h-[10vh] bg-blue-50 px-4 md:px-10">
+    <header role="banner" class="flex justify-between items-center h-[10vh] sticky top-0 z-50 bg-blue-50 px-4 md:px-10">
       <div >
         <router-link to="/" >
           <img src="../assets/logo.png" alt="logo"  class="w-20 h-20">

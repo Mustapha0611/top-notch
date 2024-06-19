@@ -16,13 +16,14 @@
           </span>
           <li role="menu item"><a href="#"  @click="menuToggle">Home</a></li>
           <li role="menu item"><a href="#about"  @click="menuToggle">About</a></li>
-          <li role="menu item"><a href=""  @click="menuToggle">Services</a></li>
+          <li role="menu item"><a href="#services"  @click="menuToggle">Services</a></li>
+          <li role="menu item"><a href="#team"  @click="menuToggle">Team</a></li>
         </ul>
       </nav>
     
       <div class="absolute md:static rounded-md md:h-auto md:w-auto w-full left-0 top-[33rem] md:top-0 flex items-end justify-center opacity-0 md:opacity-100 transition-opacity"
             :class="{showContact : showMenu}">
-        <button aria-label="Contact"   class="px-5 py-2 rounded-lg  bg-blue-700 text-slate-100">Contact</button>
+        <button aria-label="Contact"   class="px-5 py-2 rounded-lg  bg-blue-700 hover:bg-transparent hover:border-2 border-2 hover:border-blue-700 transition-all hover:text-blue-950 text-slate-100">Contact</button>
       </div>
     
       <button aria-label="Toggle Menu" aria-haspopup="true" class="md:hidden flex cursor-pointer" @click="menuToggle" @keyup.enter="menuToggle">

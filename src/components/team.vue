@@ -2,7 +2,7 @@
   <h2 class="md:text-5xl text-3xl text-center font-semibold text-blue-950 my-5">
     Meet the team
   </h2>
-  <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-10 p-8">
+  <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-10 p-8 scroll-m-10" id="team" >
     <div
       v-for="item in items"
       :key="item.id"
